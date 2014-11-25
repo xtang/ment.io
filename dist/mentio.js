@@ -1160,7 +1160,8 @@ angular.module('mentio')
             div.appendChild(span);
 
             var coordinates = {
-                top: span.offsetTop + parseInt(computed.borderTopWidth) + parseInt(computed.fontSize),
+                // top: span.offsetTop + parseInt(computed.borderTopWidth) + span.offsetHeight,
+                top: span.offsetTop - span.offsetHeight/2,
                 left: span.offsetLeft + parseInt(computed.borderLeftWidth)
             };
 
