@@ -258,8 +258,8 @@ angular.module('mentio', [])
                     'ngModel',
                     function () {
                         if (scope.triggerCharSet === undefined) {
-                            $log.error('Error, no mentio-items attribute was provided, ' +
-                                'and no separate mentio-menus were specified.  Nothing to do.');
+                            // $log.error('Error, no mentio-items attribute was provided, ' +
+                            //    'and no separate mentio-menus were specified.  Nothing to do.');
                             return;
                         }
 
