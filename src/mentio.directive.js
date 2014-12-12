@@ -220,14 +220,16 @@ angular.module('mentio', [])
                                 });
                             }
 
-                            if (event.which === 40) {
+                            if (event.which === 40 ||
+                                (event.which === 78 && event.ctrlKey)) {
                                 event.preventDefault();
                                 activeMenuScope.$apply(function () {
                                     activeMenuScope.activateNextItem();
                                 });
                             }
 
-                            if (event.which === 38) {
+                            if (event.which === 38 ||
+                                (event.which === 80 && event.ctrlKey)) {
                                 event.preventDefault();
                                 activeMenuScope.$apply(function () {
                                     activeMenuScope.activatePreviousItem();
