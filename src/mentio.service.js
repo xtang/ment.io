@@ -494,6 +494,10 @@ angular.module('mentio')
                 coordinates.top += obj.offsetTop;
             } while (obj = obj.offsetParent);
 
+            if (coordinates.left + 230 + 400 > window.innerWidth) {
+              coordinates.left = window.innerWidth - 230 - 400;
+            }
+
             document.body.removeChild(div);
 
             return coordinates;
