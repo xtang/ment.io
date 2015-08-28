@@ -13,6 +13,7 @@ angular.module('mentio', [])
                 typedTerm: '=mentioTypedTerm',
                 altId: '=mentioId',
                 iframeElement: '=mentioIframeElement',
+                // everything is "Space" here except [a-zA-Z_0-9]
                 requireLeadingSpace: '=mentioRequireLeadingSpace',
                 selectNotFound: '=mentioSelectNotFound',
                 ngModel: '='
