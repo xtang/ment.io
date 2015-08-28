@@ -10,6 +10,7 @@ angular.module('mentio', [])
                 select: '&mentioSelect',
                 items: '=mentioItems',
                 typedTerm: '=mentioTypedTerm',
+                // everything is "Space" here except [a-zA-Z_0-9]
                 requireLeadingSpace: '=mentioRequireLeadingSpace',
                 ngModel: '='
             },
